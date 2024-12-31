@@ -81,3 +81,9 @@ function bufferToChunks(buff: Buffer, chunkSize: number) {
 
     return chunks;
 }
+
+export const TONCENTER_URL_ENDPOINT = "https://testnet.toncenter.com/api/v2/jsonRPC"; 
+
+export function sleep(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
